@@ -5,7 +5,6 @@ set -euo pipefail
 export SERVICE="."
 export PIPELINE_TYPE="build"
 export REPOSITORY=https://github.com/Takapiwanashe/flux-demo.git
-export BUILDKITE_API_TOKEN=bkua_a99270406f571ac90f52460322dc5aeaa3d6d3f9
 
 CURRENT_DIR=$(pwd)
 ROOT_DIR="$( dirname "${BASH_SOURCE[0]}" )"/..
