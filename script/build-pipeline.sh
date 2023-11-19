@@ -3,8 +3,8 @@
 set -euo pipefail
 
 export SERVICE="."
-export PIPELINE_TYPE="build"
-export REPOSITORY=https://github.com/Takapiwanashe/flux-demo.git
+export PIPELINE_TYPE=""
+export REPOSITORY=git@github.com:adikari/buildkite-docker-example.git
 
 CURRENT_DIR=$(pwd)
 ROOT_DIR="$( dirname "${BASH_SOURCE[0]}" )"/..
