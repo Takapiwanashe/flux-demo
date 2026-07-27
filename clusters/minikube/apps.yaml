@@ -1,0 +1,16 @@
+# clusters/minikube/apps.yaml
+# Kustomization resource pointing to the apps directory
+apiVersion: kustomize.toolkit.fluxcd.io/v1
+kind: Kustomization
+metadata:
+  name: apps
+  namespace: flux-system
+spec:
+  interval: 5m0s
+  path: ./apps/minikube
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
+  wait: true
+  timeout: 2m0s
